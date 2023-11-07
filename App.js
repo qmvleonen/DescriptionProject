@@ -18,7 +18,7 @@ export default function App() {
       </View>
       <View style={styles.headerContainer}>
         <Image
-         source={require('./kain.png')} 
+         source={require('./Icon.png')} 
           style={styles.imageStyleLogo} 
         />
       </View>
@@ -52,14 +52,12 @@ export default function App() {
 const styles = StyleSheet.create({
   headerContainer: {
     backgroundColor: '#ECBC24',
-    justifyContent: 'right',
-    alignItems: 'center',
-    width: 1000, // Adjust the width as needed
-    height: 40,
+    alignItems: 'flex-end',
+    width: "100%", // Adjust the width as needed
+    height: "5%",
     marginBottom: 10,
     justifyContent: 'space-around',
     resizeMode: 'contain', // Adjust the resizeMode as needed (e.g., 'cover', 'contain')
-
   },
 
   appContainer: {
@@ -75,64 +73,65 @@ const styles = StyleSheet.create({
     height: 300,
     backgroundColor: '#ECBC24',
     borderTopLeftRadius: 10,
+    alignSelf: 'center',
     borderTopRightRadius: 10,
-    marginLeft: 10,
-    marginRight: 10,
-    alignItems: 'justified',
     },
 
   imageStyle: {
-    width: 230, // Adjust the width as needed
-    height: 230, // Adjust the height as needed
-    resizeMode: 'contain', // Adjust the resizeMode as needed (e.g., 'cover', 'contain')
-    flexDirection: 'column'
+    width: 230, 
+    height: 230, 
+    borderTopLeftRadius: 10,
+    borderTopRightRadius: 10,
 
   },
   imageStyleLogo: {
     width: 60, // Adjust the width as needed
-    height: 40,
-    alignItems: 'center',
+    height: 30,
+    marginLeft: 20,
   },
+  
   ContainerLechonText: {
     textAlign: 'justified',
     color: 'white',
     fontWeight: 'bold',
     marginLeft: 5,
   },
+
   ContainerLechonPrice: {
     textAlign: 'justified',
     color: 'white',
     fontWeight: 'bold',
     marginLeft: 5,
   },
+
   flexContainer: {
     length: '30%',
     backgroundColor: '#ECBC24',
-    alignItems: 'column',
-    flex: 1,
+    alignSelf: 'center',
     marginLeft: 10,
     marginRight: 10,
-    width: 230, // Adjust the width as needed
-    height: 300,
-  },
-  container3rd: {
-    backgroundColor: 'bisque',
-    paddingHeight: 20,
-    padding: 10,
-    borderBottomLeftRadius: 10,
-    borderBottomRightRadius: 10,
-    marginLeft: 10,
-    marginRight: 10,
-    marginBottom: 5,
     width: 230, // Adjust the width as needed
     height: 100,
   },
 
-  footerContainer: {
+  container3rd: {
+    backgroundColor: 'bisque',
+    borderBottomLeftRadius: 10,
+    borderBottomRightRadius: 10,
+    marginBottom: 10,
+    width: 230, // Adjust the width as needed
+    height: 100,
+    alignSelf: 'center',
+
+  },
+
+  footerContainer: { 
     marginTop: 10,
     backgroundColor: '#ECBC24',
     justifyContent: 'center',
     alignItems: 'center',
     padding: 30,
+    width: "100%", // Adjust the width as needed
+    height: 40,
   },
 });
