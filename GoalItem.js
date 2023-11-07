@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
  },
  goalText: {
     backgroundColor: '#ECBC24',
-    color: 'black',
+    color: '#ECBC24',
     padding: 30,
     borderRadius: 1,
     marginTop: 1,
