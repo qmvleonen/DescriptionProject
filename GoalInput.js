@@ -14,10 +14,7 @@ function GoalInput(props) {
   }
 
   return (      
-    <View style={styles.container}>
-        <View style={styles.Containerff}>
-        <Text style={styles.ContainerffText}>Fellow Foodies Say</Text>
-          </View>
+    <View style={styles.container}> 
       <View style={styles.inputContainerLine}>
         <TextInput
           style={styles.textInput}
@@ -38,25 +35,13 @@ function GoalInput(props) {
       <View style={styles.containerfooter}>
       </View>
     </View>
-  
   );
 }
-
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     justifyContent: 'column',
     backgroundColor: '#ECBC24',
-
-  },
-  Containerff: {
-    flex: 0, 
-    flexDirection: 'column',
-    alignItems: 'justified',
-    borderBottomWidth: 1,
-    borderColor: '#b8860bb',
-    paddingBottom: 53,
-    padding: 10,
+    height: "30%",
   },
   ContainerffText: {
     textAlign: 'justified',
@@ -67,25 +52,21 @@ const styles = StyleSheet.create({
     marginBottom: 5,
     margintop: 5,
     width: '70%',
-    borderColor: '#black',
+    borderColor: 'black',
     borderWidth: 1, //kapal to ng border bobo mo mark//
-    padding: 20,
+    height: 100,
     marginLeft: 7,
     color: 'black',
     borderRadius: 10,
-    fontSize: 12,
+    fontSize: 15,
   },
 
   inputContainerLine: {
-    flex: 0, 
+    marginTop: 40,
     flexDirection: 'row',
     alignItems: 'center',
-    borderBottomWidth: 1,
-    borderColor: '#ECBC24',
-    paddingBottom: 50,
-    padding: 10,
+    borderColor: 'black',
   },
-
   text: {
     fontSize: 12,
     color: 'black',
@@ -101,8 +82,5 @@ const styles = StyleSheet.create({
     borderWidth: 1, 
   },
 });
-
-
-
 
 export default GoalInput;
