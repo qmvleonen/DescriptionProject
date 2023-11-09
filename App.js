@@ -23,7 +23,9 @@ export default function App() {
         />
       </View>
 
+
       <View style={styles.ContainerLechon}>
+
         <Image
           source={require('./lechon.png')} //image of food//
           style={styles.imageStyle}
@@ -31,7 +33,6 @@ export default function App() {
         <Text style={styles.ContainerLechonText}>Lechon Kawali</Text> <Text style={styles.ContainerLechonPrice}>₱200</Text>
 
       </View>
-
       <View style={styles.container3rd}>
       </View>
 
@@ -66,6 +67,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 0,
     backgroundColor: 'white',
     justifyContent: 'space-around',
+    borderRadius: 10,
   },
 
   ContainerLechon: {
@@ -115,10 +117,10 @@ const styles = StyleSheet.create({
   },
 
   container3rd: {
+    marginBottom: 10,
     backgroundColor: 'bisque',
     borderBottomLeftRadius: 10,
     borderBottomRightRadius: 10,
-    marginBottom: 10,
     width: 230, // Adjust the width as needed
     height: 100,
     alignSelf: 'center',
@@ -130,8 +132,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#ECBC24',
     justifyContent: 'center',
     alignItems: 'center',
-    padding: 30,
+    padding: 20,
     width: "100%", // Adjust the width as needed
-    height: 40,
+    height: "5%",
   },
 });
