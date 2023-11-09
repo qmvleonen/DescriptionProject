@@ -15,10 +15,10 @@ const styles = StyleSheet.create({
   flex: 1,
  },
  goalText: {
-    backgroundColor: '#ECBC24',
-    color: '#ECBC24',
+  backgroundColor: '#ECBC24',
+  color: 'black',
     padding: 30,
-    borderRadius: 1,
+    borderRadius: 10,
     marginTop: 1,
     flex: 1,
   },
