@@ -15,6 +15,7 @@ function GoalInput(props) {
 
   return (      
     <View style={styles.container}> 
+            <Text style={styles.containerfodies}>Fellow Foodies Say</Text> 
       <View style={styles.inputContainerLine}>
         <TextInput
           style={styles.textInput}
@@ -39,10 +40,17 @@ function GoalInput(props) {
 }
 const styles = StyleSheet.create({
   container: {
-    justifyContent: 'column',
     backgroundColor: '#ECBC24',
-    height: "30%",
+    height: 150,
   },
+  containerfodies: {
+    marginTop: 10,
+    marginLeft: 10,
+    textAlign: 'justified',
+    color: 'white',
+    fontWeight: 'bold',
+  },
+
   ContainerffText: {
     textAlign: 'justified',
     color: 'white',
@@ -62,7 +70,7 @@ const styles = StyleSheet.create({
   },
 
   inputContainerLine: {
-    marginTop: 40,
+    marginTop: 10,
     flexDirection: 'row',
     alignItems: 'center',
     borderColor: 'black',
